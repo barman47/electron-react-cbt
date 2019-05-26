@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-
 const { ipcRenderer } = window.require('electron');
-// const fs = electron.remote.require('fs');
-// const ipcRenderer  = electron.ipcRenderer;
-
-// const electron = require('electron');
-// const fs = electron.remote.require('fs');
-// const ipcRenderer  = electron.ipcRenderer;
 
 class Register extends Component {
     constructor() {

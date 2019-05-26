@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
-  "main": "electron/main.js",
+  "main": "./electron/main.js",
   "build": {
     "productName": "React Electron App",
     "appId": "com.barman.electron",
@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@mdi/font": "^3.6.95",
-    "foreman": "^3.0.1",
+    "concurrently": "^4.1.0",
+    "electron-is-dev": "^1.1.0",
     "materialize-css": "^1.0.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
@@ -33,10 +34,12 @@
   "devDependencies": {
     "electron": "^5.0.2",
     "electron-builder": "^20.40.2",
-    "typescript": "^3.4.5"
+    "electron-reloader": "^0.3.0",
+    "typescript": "^3.4.5",
+    "wait-on": "^3.2.0"
   },
   "scripts": {
-    "dev": "nf start",
+    "dev": "concurrently \"SET BROWSER=none&&npm start\" \"wait-on http://localhost:3000 && npm run electron\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
