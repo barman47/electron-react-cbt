@@ -17,5 +17,13 @@ module.exports = {
                 console.error('Unable to connect to the database.', err);
             });
 
+    },
+
+    isEmpty: (value) => {
+        if(value === '' && value.trim() === '') {
+            return true;
+        } else {
+            return false;
+        }
     }
 };

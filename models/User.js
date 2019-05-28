@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const uuid = require('uuid');
 const path = require('path');
 
 const sequelize = new Sequelize({
@@ -12,7 +11,7 @@ class User extends Model {}
 User.init({
 	id: {
 		type: Sequelize.STRING,
-		defaultValue: uuid(),
+		allowNull: false,
 		primaryKey: true
 	},
     firstName: {
