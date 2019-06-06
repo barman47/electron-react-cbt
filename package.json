@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@mdi/font": "^3.6.95",
+    "bcryptjs": "^2.4.3",
+    "classnames": "^2.2.6",
     "concurrently": "^4.1.0",
     "electron-is-dev": "^1.1.0",
     "materialize-css": "^1.0.0",
