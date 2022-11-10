@@ -35,7 +35,7 @@
     "validator": "^11.0.0"
   },
   "devDependencies": {
-    "electron": "^5.0.2",
+    "electron": "^18.3.7",
     "electron-builder": "^20.40.2",
     "electron-reloader": "^0.3.0",
     "typescript": "^3.4.5",
